@@ -136,7 +136,19 @@ class Layout3 extends StatelessWidget {
             height: 150,
             child: Container(
               color: Colors.black54,
-            ))
+            )),
+        Positioned(
+          top: 50,
+          left: 10,
+          child: FloatingActionButton(
+            onPressed: () {
+              // Add your onPressed code here!
+              Navigator.pop(context);
+            },
+            child: const Icon(Icons.skip_previous),
+            backgroundColor: Colors.black54,
+          ),
+        )
       ],
     );
   }

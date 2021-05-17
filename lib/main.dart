@@ -22,13 +22,6 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Home(),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            // Add your onPressed code here!
-          },
-          child: const Icon(Icons.add),
-          backgroundColor: Colors.deepPurpleAccent,
-        ),
       ),
     );
   }

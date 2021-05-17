@@ -19,9 +19,9 @@ class Home extends StatelessWidget {
             width: double.infinity,
             child: InkWell(
               onTap: () {
-                Navigator.pushNamed(context, RouteName.lesson1);
+                Navigator.pushNamed(context, RouteName.lesson2);
               },
-              child: Center(child: Text("Lesson 1")),
+              child: Center(child: Text("Lesson 2")),
             ),
           ),
           Container(
@@ -30,9 +30,11 @@ class Home extends StatelessWidget {
             width: double.infinity,
             height: 40,
             child: InkWell(
-              onTap: test,
+              onTap: () {
+              Navigator.pushNamed(context, RouteName.lesson3);
+              },
               child: Center(
-                  child: Text("Lesson 2")),
+                  child: Text("Lesson 3")),
             ),
           ),
         ],
